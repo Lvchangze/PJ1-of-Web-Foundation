@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>充值</title>
+    <link href="css/登陆注册充值.css" rel="stylesheet">
+</head>
+<body>
+<a href="个人信息.html" class="a1">→返回个人信息</a>
+<a href="主界面.html" class="a2">→返回首页</a>
+<h1 style="margin-top: 65px">用户登陆</h1>
+<form class="subform"  method="post" action="个人信息.html">
+    <p>
+        <label for="姓名" class="label">请输入用户名</label>
+        <input type="text" name="姓名" id="姓名" autocomplete="off">
+    </p>
+    <p>
+        <label for="密码" class="label">请输入密码</label>
+        <input type="password" name="密码" id="密码" autocomplete="off">
+    </p>
+    <p>
+        <label for="充值" class="label">请输入充值金额</label>
+        <input type="text" name="充值" id="充值" placeholder="美元$" autocomplete="off">
+    </p>
+    <p>
+        <input type="submit" value="充值" onclick="myFunction()">
+    </p>
+</form>
+<script>
+    function myFunction() {
+        var i = Math.floor(Math.random() * 2);
+        if (i === 0) {
+            alert("充值成功！");
+        } else {
+            alert("充值失败，服务器错误！");
+        }
+    }
+</script>
+</body>
+</html>

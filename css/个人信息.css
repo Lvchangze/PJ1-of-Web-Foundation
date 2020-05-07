@@ -1,0 +1,84 @@
+a {
+    text-decoration: none;
+}
+
+body{
+    margin:0;
+    margin-top: -10px;
+    background-color: #90EE90;
+}
+
+body header h1{
+    font-weight: lighter;
+    font-size: 60px;
+    color:white;
+    background-color: black;
+}
+
+.标语{
+    color: white;
+    position: absolute;
+    left: 400px;
+    top: 95px;
+    font-style:italic ;
+    font-size: 30px;
+}
+nav{
+    font-size: 20px;
+    position: absolute;
+    top: 1.0em;
+    right: 20px;
+}
+
+nav a:link{
+    color: #FFFFFF;
+}
+
+nav a:visited{
+    color: yellow;
+}
+
+nav a:hover{
+    color: red;
+}
+
+nav a:active{
+    color: white;
+}
+
+header{
+    margin-top: -3.5em;
+}
+
+form{
+    margin-top: -30px;
+    float: right;
+}
+
+.table1{
+    margin-top: 160px;
+    border-spacing: 20px;
+    font-size: 20px;
+}
+
+.table1 tr th {
+    font-size: 30px;
+}
+
+.table1 {
+    border-radius: 10px;
+    border:3px solid black;
+}
+
+.tables{
+    border-spacing: 2px;
+}
+
+.tables td{
+    width: 300px;
+    border:1px solid black;
+}
+
+section section p{
+    font-size: 30px;
+}

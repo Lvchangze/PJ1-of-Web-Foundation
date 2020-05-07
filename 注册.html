@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link href="css/登陆注册充值.css" rel="stylesheet">
+</head>
+<body>
+<a href="主界面.html" class="a1">→返回首页</a>
+<a href="登陆.html" class="a2">→登陆</a>
+<h1 style="margin-top: 65px">用户注册</h1>
+<form class="subform"  method="post" action="登陆.html">
+    <p>
+        <label for="name" class="label">请输入用户名</label>
+        <input type="text" id="name" placeholder="至少为6位，不能为纯数字或纯字母" required autocomplete="off" >
+        <p id="titleNull"  style="display:none;margin-left: 560px;"><font style="color:red;display: inline">不得为空</font>
+        <p id="wrong"  style="display:none;margin-left: 560px;"><font style="color:red;display: inline">格式错误</font>
+</p>
+    <p>
+        <label for="password" class="label">请输入密码</label>
+        <input type="password" id="password" placeholder="至少为6位，不能与用户名相同" required autocomplete="off">
+        <p id="titleNull2"  style="display:none;margin-left: 560px; "><font style="color:red;display: inline">不得为空</font>
+        <p id="wrong2"  style="display:none;margin-left: 560px;"><font style="color:red;display: inline">格式错误</font>
+        <p id="w1" style="display:none;margin-left: 500px;"><font style="color:red;display: inline">不得与用户名相同</font>
+</p>
+    <p>
+        <label for="confirm" class="label">请确认密码</label>
+        <input type="password" id="confirm" placeholder="重新输入密码" required autocomplete="off">
+        <p id="titleNull3"  style="display:none;margin-left: 560px;"><font style="color:red;display: inline">不得为空</font>
+        <p id="wrong3"  style="display:none;margin-left: 560px;"><font style="color:red;display: inline">与密码不符</font>
+    </p>
+    <p>
+        <label for="tel" class="label">请输入电话号码</label>
+        <input type="text" id="tel" placeholder="11位数字电话号码" required autocomplete="off" >
+        <p id="titleNull4"  style="display:none;margin-left: 560px;"><font style="color:red;display: inline">不得为空</font>
+        <p id="wrong4"  style="display:none;margin-left: 560px;"><font style="color:red;display: inline">格式错误</font>
+    </p>
+    <p>
+        <input type="submit" value="注册" onclick="validate()">
+    </p>
+</form>
+<script type="text/javascript" src="js/register.js">
+</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Art Store</title>
+    <link rel="stylesheet" href="css/主界面.css" >
+</head>
+<body onload="changeimage();change()">
+<header>
+    <a href="商品详情.html">
+    <img id="image" style="position: absolute;top: 1px;">
+    </a>
+    <nav>
+        <a href="主界面.html">首页</a>
+        <a href="搜索.html">搜索</a>
+        <a href="商品详情.html">商品详情</a>
+        <a href="购物车.html">购物车</a>
+        <a href="登陆.html" id="change1" style="display: none">登陆</a>
+        <a href="注册.html" id="change2" style="display: none">注册</a>
+        <a href="个人信息.html" id="change3">个人信息</a>
+        <a href="#" id="change4" onclick="restore()">登出</a>
+    </nav>
+    <a href="主界面.html" style="position: absolute;"><h1 class="h1">Art Store</h1></a>
+    <p class="标语">Want it ? Buy it !</p>
+    <p class="Learnmore">
+        <a href="商品详情.html">→Learn More←</a>
+    </p>
+</header>
+<p class="引导" style="background-color: black;font-size: 40px; color: red;margin-left:500px ;margin-right: 470px"  >
+    ↓  ↓  ↓ Popular  Artworks ↓  ↓  ↓
+</p>
+<br><br>
+<section>
+    <figure>
+        <a href="商品详情.html">
+        <img src="images/works/large/001020.jpg" alt="1">
+        </a>
+        <figcaption>
+            <p style="font-weight: bolder;font-size: large;margin-left: 6em">Family</p>
+            <p style="margin-left: 70px">Artist: James Hardern</p>
+            <a href="商品详情.html">
+            This is an incredible artwork which shows
+            <br>
+                a poor famliy.It tells a lot.
+            </a>
+            <a href="购物车.html" style="text-decoration: gold" class="price">
+            <p style="margin-left: 30px ;font-size: 50px; font-weight: bold;margin-top: 0">
+                Price: $40
+            </p>
+            </a>
+        </figcaption>
+    </figure>
+    <figure>
+        <a href="商品详情.html">
+        <img src="images/works/large/001050.jpg" alt="2">
+        </a>
+        <figcaption>
+            <p style="font-weight: bolder;font-size: large;margin-left: 6em">Capitalist</p>
+            <p style="margin-left: 75px">Artist: Paul George</p>
+            <a href="商品详情.html">
+                This is an famous artwork.It shows a
+                <br>
+                citizen capitalist which is really rich.
+            </a>
+            <a href="购物车.html" style="text-decoration: gold" class="price">
+            <p style=" margin-left: 30px ;font-size: 50px;font-weight: bold;margin-top: 0">
+                Price: $50
+            </p>
+            </a>
+        </figcaption>
+    </figure>
+    <figure>
+        <a href="商品详情.html">
+        <img src="images/works/large/001130.jpg" alt="3">
+        </a>
+        <figcaption>
+            <p style="font-weight: bolder;font-size: large;margin-left: 6.5em">Worker</p>
+            <p style="margin-left: 60px;">Artist: Russell Westbrook</p>
+            <a href="商品详情.html">
+                The man in the work is a worker who
+                <br>
+                struggles for his poor family.
+            </a>
+            <a href="购物车.html" style="text-decoration: gold" class="price">
+            <p style="margin-left: 30px ;font-size: 50px;font-weight: bold;margin-top: 0">
+                Price: $70
+            </p>
+            </a>
+        </figcaption>
+    </figure>
+</section>
+<script src="js/picture.js">
+</script>
+<script src="js/afterin.js"></script>
+</body>
+</html>

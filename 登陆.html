@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link href="css/登陆注册充值.css" rel="stylesheet">
+</head>
+<body>
+<a href="主界面.html" class="a1">→返回首页</a>
+<a href="注册.html" class="a2">→注册</a>
+<h1 style="margin-top: 65px">用户登陆</h1>
+<form class="subform"  method="post" action="主界面.html">
+    <p>
+        <label for="姓名" class="label">请输入用户名</label>
+        <input type="text" name="姓名" id="姓名" required autocomplete="off">
+    </p>
+    <p>
+        <label for="密码" class="label">请输入密码</label>
+        <input type="password" name="密码" id="密码" required>
+    </p>
+    <p>
+        <input type="submit" value="登陆" onclick="validate()" autocomplete="off">
+    </p>
+</form>
+<script>
+    function al(){
+        var i = Math.floor(Math.random()*3);
+        if(i === 0)
+            alert("登陆成功！");
+        else
+            alert("登陆失败，服务器错误！");
+    }
+    function validate() {
+        var i = Math.floor(Math.random()*10);
+        var u = Math.floor(Math.random()*10);
+        var m = Math.floor(Math.random()*10);
+        var n = Math.floor(Math.random()*10);
+        var validate = prompt("请输入验证码:\n "+i+u+m+n);
+        if(validate != null && validate!== ""){
+            al()
+        }
+    }
+</script>
+<script src="js/afterin.js"></script>
+</body>
+</html>

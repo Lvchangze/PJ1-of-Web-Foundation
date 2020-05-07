@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/购物车.css">
+</head>
+<body>
+<header>
+    <nav>
+        <a href="主界面.html">首页</a>
+        <a href="搜索.html">搜索</a>
+        <a href="商品详情.html">商品详情</a>
+        <a href="个人信息.html">个人信息</a>
+    </nav>
+    <a href="主界面.html"><h1 class="h1">Art Store</h1></a>
+</header>
+<form action="搜索.html" class="submit">
+    <input type="text" placeholder="搜索您想要的..." style="width: 300px;height: 20px">
+    <input type="submit" value="搜索" style="width: 50px;height: 30px">
+</form>
+<section id="div1">
+    <h1 class="car">购物车</h1>
+    <section class="main" id="1">
+    <table style="text-align: center;">
+        <tr>
+            <td rowspan="5">
+                <img src="images/works/large/005090.jpg" style="width: 350px;height: 300px;border-radius: 20px">
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <a style="font-size: 30px" href="商品详情.html">
+                    Name: Brother And Sister
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <h3>
+                    By James Harden
+                </h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                The artwork shows two lovely kids.The Brother is going to jion a war and the sister is sorrowful.
+            </td>
+        </tr>
+        <tr>
+            <td style="margin-top: 20px">
+                <input type="submit" class="button" value="价格: $ 90" style="font-size: 15px;width: 100px;border-radius: 10px">
+                <input type="button" class="button" value="删除"
+                       onclick="del();delete1()" style="font-size: 15px;width: 100px;border-radius: 10px">
+        </tr>
+    </table>
+    <input type="button" value="结账:$90" onclick="myFunction()" style="position: absolute;right: 30px;font-size: 25px;width: 220px;height: 50px; border-radius: 10px">
+</section>
+    <section class="main" id="2">
+    <table style="text-align: center;">
+        <tr>
+            <td rowspan="5">
+                <img src="images/works/large/013030.jpg" style="width: 350px;height: 300px;border-radius: 20px">
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <a style="font-size: 30px" href="商品详情.html">
+                    Name: An Old Women
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <h3>
+                    By Jimmy Butler
+                </h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                The artwork shows an old women who are looking forword to seeing her husband.
+            </td>
+        </tr>
+        <tr>
+            <td style="margin-top: 50px">
+                <input type="submit" class="button" value="价格: $ 70" style="font-size: 15px;width: 100px;border-radius: 10px">
+                <input type="button" class="button" value="删除"
+                       onclick="del();delete2()" style="font-size: 15px;width: 100px;border-radius: 10px">
+        </tr>
+    </table>
+    <input type="button" value="结账：$70" onclick="myFunction()" style="position: absolute;right: 30px;font-size: 25px;width: 220px;height: 50px; border-radius: 10px">
+</section>
+</section>
+<section id="div2">
+    <h1 style="margin-left: 20px">最近删除</h1>
+    <section class="main" id="3" style="display: none">
+        <table style="text-align: center;">
+            <tr>
+                <td rowspan="5">
+                    <img src="images/works/large/005090.jpg" style="width: 350px;height: 300px;border-radius: 20px">
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <a style="font-size: 30px" href="商品详情.html">
+                        Name: Brother And Sister
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <h3>
+                        By James Harden
+                    </h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    The artwork shows two lovely kids.The Brother is going to jion a war and the sister is sorrowful.
+                </td>
+            </tr>
+            <tr>
+                <td style="margin-top: 20px">
+                    <input type="submit" class="button" value="价格: $ 90" style="font-size: 15px;width: 100px;border-radius: 10px">
+                    <input type="button" class="button" value="复原"
+                           onclick="restore1()" style="font-size: 15px;width: 100px;border-radius: 10px">
+            </tr>
+        </table>
+    </section>
+    <section class="main" id="4" style="display: none">
+        <table style="text-align: center;">
+            <tr>
+                <td rowspan="5">
+                    <img src="images/works/large/013030.jpg" style="width: 350px;height: 300px;border-radius: 20px">
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <a style="font-size: 30px" href="商品详情.html">
+                        Name: An Old Women
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <h3>
+                        By Jimmy Butler
+                    </h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    The artwork shows an old women who are looking forword to seeing her husband.
+                </td>
+            </tr>
+            <tr>
+                <td style="margin-top: 50px">
+                    <input type="submit" class="button" value="价格: $ 70" style="font-size: 15px;width: 100px;border-radius: 10px">
+                    <input type="button" class="button" value="复原"
+                           onclick="restore2()" style="font-size: 15px;width: 100px;border-radius: 10px">
+            </tr>
+        </table>
+    </section>
+</section>
+<ul class="pagination">
+    <li><a href="#">«</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li><a href="#">7</a></li>
+    <li><a href="#">»</a></li>
+</ul>
+<script>
+    function myFunction(){
+        var i = Math.floor(Math.random()*3);
+        if(i === 0)
+            alert("结账成功！");
+        else if (i === 1)
+            alert("结账失败，余额不足！");
+        else
+            alert("结账失败，服务器错误！")
+    }
+
+    function del() {
+        var i = Math.floor(Math.random()*2);
+        if(i === 0)
+            alert("删除成功！");
+        else
+            alert("删除失败，服务器错误！")
+    }
+
+    function delete1() {
+        document.getElementById("1").style.display = "none";
+        document.getElementById("3").style.display = "";
+    }
+
+    function delete2() {
+        document.getElementById("2").style.display = "none";
+        document.getElementById("4").style.display = "";
+    }
+    
+    function restore1() {
+        document.getElementById("3").style.display = "none";
+        document.getElementById("1").style.display = "";
+    }
+
+    function restore2() {
+        document.getElementById("4").style.display = "none";
+        document.getElementById("2").style.display = "";
+    }
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索</title>
+    <link rel="stylesheet" href="css/搜索.css">
+</head>
+<body>
+<header>
+    <nav>
+        <a href="主界面.html">首页</a>
+        <a href="购物车.html">购物车</a>
+        <a href="商品详情.html">商品详情</a>
+        <a href="个人信息.html">个人信息</a>
+    </nav>
+    <a href="主界面.html"><h1 class="h1">Art Store</h1></a>
+</header>
+<form action="搜索.html" class="submit">
+    <input type="text" placeholder="搜索您想要的..." style="width: 300px;height: 20px">
+    <input type="submit" value="搜索" style="width: 50px;height: 30px">
+</form>
+<section style="margin-left: 130px;">
+    <h1 style="font-size: 30px">请筛选类型：</h1>
+    <label style="font-size: 25px;">
+        <input type="checkbox" class="checkbox" value="1">Man
+        <input type="checkbox" class="checkbox" value="2">Women
+        <input type="checkbox" class="checkbox" value="3">Kids
+        <input type="checkbox" class="checkbox" value="4">Family
+        <input type="checkbox" class="checkbox" value="5">Farmer
+        <input type="checkbox" class="checkbox" value="6">Worker
+        <input type="checkbox" class="checkbox" value="7">Emperor
+    </label>
+</section>
+<section class="big">
+    <h1 style="font-size: 30px">搜索结果：</h1>
+    <section class="section">
+        <figure>
+            <img src="images/works/large/015010.jpg" style="width: 200px;height: 200px;margin-left: -30px;margin-top: -10px;">
+            <div style="float: right;right: -10px">
+                <big style="font-weight: bolder;font-size: 30px">
+                    A<br> Happy <br>Family
+                </big>
+                <p>
+                    By Kevin Durant
+                </p>
+            </div>
+            <figcaption style="margin-left: -30px">
+                What a happy family!They enjoy theirselves.
+            </figcaption>
+        </figure>
+        <table style="border-spacing: 30px">
+            <tr>
+                <td>
+                    <a href="商品详情.html">
+                        <input type="submit" class="button" value="查看" style="font-size: 20px;width: 150px;border-radius: 10px">
+                    </a>
+                </td>
+                <td>
+                    <a>
+                        <input type="button" class="button" value="热度：9" onclick="del()" style="font-size: 20px;width: 150px;border-radius: 10px">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section class="section">
+        <figure>
+            <img src="images/works/large/001140.jpg" style="width: 200px;height: 200px;margin-left: -30px;margin-top: -10px;">
+            <div style="float: right;right: -10px">
+                <big style="font-weight: bolder;font-size: 30px">
+                    Some<br>Naked <br>Women
+                </big>
+                <p>
+                    By Kris Middleton
+                </p>
+            </div>
+            <figcaption style="margin-left: -30px">
+                Some naked women gathered together.
+            </figcaption>
+        </figure>
+        <table style="border-spacing: 30px">
+            <tr>
+                <td>
+                    <a href="商品详情.html">
+                        <input type="submit" class="button" value="查看" style="font-size: 20px;width: 150px;border-radius: 10px">
+                    </a>
+                </td>
+                <td>
+                    <a>
+                        <input type="button" class="button" value="热度：7" onclick="del()" style="font-size: 20px;width: 150px;border-radius: 10px">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section class="section">
+        <figure>
+            <img src="images/works/large/007020.jpg" style="width: 200px;height: 200px;margin-left: -30px;margin-top: -10px;">
+            <div style="float: right;right: -10px">
+                <big style="font-weight: bolder;font-size: 30px">
+                    The<br> Freedom<br>Goddess
+                </big>
+                <p>
+                    By Kawhi Leonard
+                </p>
+            </div>
+            <figcaption style="margin-left: -30px">
+                The freedom goddess led France to win.
+            </figcaption>
+        </figure>
+        <table style="border-spacing: 30px">
+            <tr>
+                <td>
+                    <a href="商品详情.html">
+                        <input type="submit" class="button" value="查看" style="font-size: 20px;width: 150px;border-radius: 10px">
+                    </a>
+                </td>
+                <td>
+                    <a>
+                        <input type="button" class="button" value="热度：6" onclick="del()" style="font-size: 20px;width: 150px;border-radius: 10px">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section class="section">
+        <figure>
+            <img src="images/works/large/019070.jpg" style="width: 200px;height: 200px;margin-left: -30px;margin-top: -10px;">
+            <div style="float: right;right: -10px">
+                <big style="font-weight: bolder;font-size: 30px">
+                    The<br> Star<br>Sky
+                </big>
+                <p>
+                    By Marc Gasol
+                </p>
+            </div>
+            <figcaption style="margin-left: -30px">
+                Magic star sky is so beautiful.
+            </figcaption>
+        </figure>
+        <table style="border-spacing: 30px">
+            <tr>
+                <td>
+                    <a href="商品详情.html">
+                        <input type="submit" class="button" value="查看" style="font-size: 20px;width: 150px;border-radius: 10px">
+                    </a>
+                </td>
+                <td>
+                    <a>
+                        <input type="button" class="button" value="热度：4" onclick="del()" style="font-size: 20px;width: 150px;border-radius: 10px">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section class="section">
+        <figure>
+            <img src="images/works/large/019150.jpg" style="width: 200px;height: 200px;margin-left: -30px;margin-top: -10px;">
+            <div style="float: right;right: -10px">
+                <big style="font-weight: bolder;font-size: 30px">
+                    A<br> Cherry <br>Tree
+                </big>
+                <p>
+                    By Kyle Lowry
+                </p>
+            </div>
+            <figcaption style="margin-left: -30px">
+                What a beautiful cherry tree!It is lovely.
+            </figcaption>
+        </figure>
+        <table style="border-spacing: 30px">
+            <tr>
+                <td>
+                    <a href="商品详情.html">
+                        <input type="submit" class="button" value="查看" style="font-size: 20px;width: 150px;border-radius: 10px">
+                    </a>
+                </td>
+                <td>
+                    <a>
+                        <input type="button" class="button" value="热度：3" onclick="del()" style="font-size: 20px;width: 150px;border-radius: 10px">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section class="section">
+        <figure>
+            <img src="images/works/large/014040.jpg" style="width: 200px;height: 200px;margin-left: -30px;margin-top: -10px;">
+            <div style="float: right;right: -10px">
+                <big style="font-weight: bolder;font-size: 30px">
+                    Two<br> Young <br>Pianist
+                </big>
+                <p>
+                    By Danny Green
+                </p>
+            </div>
+            <figcaption style="margin-left: -30px">
+                Two female pianist are playing pianist.
+            </figcaption>
+        </figure>
+        <table style="border-spacing: 30px">
+            <tr>
+                <td>
+                    <a href="商品详情.html">
+                        <input type="submit" class="button" value="查看" style="font-size: 20px;width: 150px;border-radius: 10px">
+                    </a>
+                </td>
+                <td>
+                    <a>
+                        <input type="button" class="button" value="热度：0" onclick="del()" style="font-size: 20px;width: 150px;border-radius: 10px">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </section>
+</section>
+<ul class="pagination">
+    <li><a href="#">«</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li><a href="#">7</a></li>
+    <li><a href="#">8</a></li>
+    <li><a href="#">9</a></li>
+    <li><a href="#">10</a></li>
+    <li><a href="#">»</a></li>
+</ul>
+</body>
+</html>
